@@ -1,0 +1,63 @@
+{
+  "zgalovok": [
+    {
+      "id": 1,
+      "cehProizv": "Сварочный",
+      "dateBegin": "03.10.20001",
+      "dateEnd": "09.08.2020",
+      "status": "Выполнен"
+    },
+    {
+      "id": 4,
+      "cehProizv": "Молочный",
+      "dateBegin": "11.11.75",
+      "dateEnd": "21.12.2222",
+      "status": "в работе"
+    },
+    {
+      "id": 3,
+      "cehProizv": "Обкаточный",
+      "dateBegin": "11.11.2020",
+      "dateEnd": "01.01.2023",
+      "status": "новый"
+    }
+  ],
+  "position": [
+    {
+      "id": 1,
+      "numPosition": 1,
+      "celevCharacterMaterial": {
+        "markaStali": "m162",
+        "diametr": 566,
+        "stenka": "Красная"
+      },
+      "ObPoszakaza": 32,
+      "edinIzm": "см",
+      "status": "Статус (новая, в работе, выполнена)"
+    },
+    {
+      "id": 2,
+      "numPosition": 1,
+      "celevCharacterMaterial": {
+        "markaStali": "аас234",
+        "diametr": 331,
+        "stenka": "Желтый"
+      },
+      "ObPoszakaza": 90,
+      "edinIzm": "дм",
+      "status": "Новая"
+    },
+    {
+      "numPosition": 3,
+      "celevCharacterMaterial": {
+        "markaStali": "см456",
+        "diametr": "54",
+        "stenka": "Пластмасса"
+      },
+      "ObPoszakaza": "21",
+      "edinIzm": "КМ",
+      "status": "Новый",
+      "id": 3
+    }
+  ]
+}

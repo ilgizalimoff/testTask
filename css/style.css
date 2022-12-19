@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-weight:700;
+    font-size: 14px;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+button{
+    font-size: large;
+    padding: 8px;
+    border: none;
+    box-shadow: 0 2px 4px 2px rgba(227, 250, 147, 0.5);
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.cart{
+    background-color: whitesmoke;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 2px rgb(141, 150, 150, 0.5);
+    padding: 8px;
+    margin-top: 10px;
+}
+.zakazBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.showDopPar{
+    margin: 10px 0px;
+}
+.showDopParams{
+    border-top: 1px solid black;
+    text-align: center;
+    background-color: greenyellow;
+    text-align: right;
+    padding: 8px;
+}
+.addZakazDiv{
+    display: none;
+}
+#showDopPar{
+    display: none; 
+}
+.addZakazDiv{
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 50%;
+    box-shadow: 0 2px 4px 2px rgb(141, 150, 150, 0.5);
+    padding: 8px;
+    background-color: beige;
+
+}
+.addZakazDiv input, .addZakazDiv option{
+    padding: 8px;
+    margin-top: 5px;
+}

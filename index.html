@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="getZakazy">Посмотреть заказы</button>
+        <button id="addZakazy">Добавить заказы</button>
+        <button id="showDopPar">Дополнительные позиции</button>
+        <div class="addZakazDiv">
+            <label for="">Цех производителя: </label><input id="cehProizv" type="text">
+            <br><label for="">Дата начала: </label><input id="date1" type="text">
+            <br> <label for="">Дата окончания: </label><input id="date2" type="text">
+            <br><label for="">Статус</label><select id="status" name="" id="">
+                <option value="новый">Новый</option>
+                <option value="в работе">В работе</option>
+                <option value="выполнен">Выполнен</option>
+            </select>
+            <br> <label for="">Марка стали </label><input id="markaStali" type="text">
+            <br> <label for="">Диаметр: </label><input id="diametr" type="text">
+            <br> <label for="">Стена: </label><input id="stenka" type="text">
+            <br> <label for="">Объем позиции: </label><input id="obPosic" type="text">
+            <br> <label for="">Единица измерения: </label><input id="edIZm" type="text">
+            <br><button id="addBtn">Добавить</button>
+        </div>
+        <div class="zakazBox">
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="js/addZakaz.js"></script>
+
+</body>
+
+</html>
