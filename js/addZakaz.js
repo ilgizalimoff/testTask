@@ -5,14 +5,14 @@ let addZakazDiv = document.querySelector('.addZakazDiv')
 addZakazy.addEventListener('click', function () {
     addZakazDiv.style.display = 'block'
     zakazBox.style.display = 'none'
-    showDopPar.style.display ='none'
+    showDopPar.style.display = 'none'
 })
 addBtn.addEventListener('click', function () {
     addZakaz()
 })
 
 function addZakaz() {
-    fetch('http://localhost:3000/zgalovok')
+    fetch('https://my-json-server.typicode.com/ilgizalimoff/server/zgalovok')
         .then(response => response.json())
         .then(data => redsad(data))
     function redsad(data) {
@@ -26,13 +26,14 @@ function addZakaz() {
         let obPosic = document.getElementById('obPosic').value
         let edIZm = document.getElementById('edIZm').value
         let body1 = {
-            id: data.length + 1,
+            id: Date.now(),
             cehProizv: cehProizv,
             dateBegin: date1,
             dateEnd: date2,
             status: status
         }
         let body2 = {
+            id: Date.now(),
             numPosition: data.length + 1,
             celevCharacterMaterial: {
                 markaStali: markaStali,
@@ -43,15 +44,17 @@ function addZakaz() {
             edinIzm: edIZm,
             status: 'Новый'
         }
-        fetch('http://localhost:3000/zgalovok', {
+        fetch('https://my-json-server.typicode.com/ilgizalimoff/server/zgalovok', {
             method: 'POST',
             body: JSON.stringify(body1),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
+            .then(response => console.log(response.json()))
+            .then(data => console.log(data))
 
-        fetch('http://localhost:3000/position', {
+        fetch('https://my-json-server.typicode.com/ilgizalimoff/server/position', {
             method: 'POST',
             body: JSON.stringify(body2),
             headers: {

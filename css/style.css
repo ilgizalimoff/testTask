@@ -1,71 +1,137 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
-h1{
-    font-weight:700;
-    font-size: 14px;
-    display: inline-block;
-    border-bottom: 1px solid black;
-    margin-top: 10px;
-}
-button{
-    font-size: large;
-    padding: 8px;
-    border: none;
-    box-shadow: 0 2px 4px 2px rgba(227, 250, 147, 0.5);
-}
-.container{
-    max-width: 80%;
+
+.container {
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
     padding-top: 10px;
 }
-.cart{
-    background-color: whitesmoke;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px 2px rgb(141, 150, 150, 0.5);
-    padding: 8px;
-    margin-top: 10px;
+
+h1 {
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+    border-bottom: 1px solid black;
 }
-.zakazBox{
+
+button {
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0px 1px 11px 2px rgba(49, 49, 47, 0.5);
+}
+
+.zakazBox {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 10px;
 }
-.showDopPar{
+
+.cart {
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 2px rgb(141, 150, 150, 0.5);
+    padding: 8px;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+.showDopPar {
     margin: 10px 0px;
 }
-.showDopParams{
-    border-top: 1px solid black;
+
+.showDopParams {
+    margin-top: 10px;
     text-align: center;
-    background-color: greenyellow;
+    background-color: rgb(179, 194, 156);
     text-align: right;
     padding: 8px;
+    box-shadow: 0px 1px 11px 2px rgba(49, 49, 47, 0.5);
+
 }
-.addZakazDiv{
+
+.addZakazDiv {
     display: none;
 }
-#showDopPar{
-    display: none; 
+
+#showDopPar {
+    display: none;
 }
-.addZakazDiv{
+
+.addZakazDiv {
     margin: 0 auto;
     margin-top: 10px;
-    max-width: 50%;
+    max-width: 60%;
     box-shadow: 0 2px 4px 2px rgb(141, 150, 150, 0.5);
     padding: 8px;
     background-color: beige;
-
 }
-.addZakazDiv input, .addZakazDiv option{
+
+#addBtn {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.addZakazDiv input,
+.addZakazDiv select {
     padding: 8px;
     margin-top: 5px;
+    width: 90%;
+    outline: none;
+}
+
+input {
+    width: 50%;
+}
+
+@media(max-width: 900px) {
+    .cart {
+        width: 200px;
+    }
+
+    .zakazBox {
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:720px) {
+    .container button {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:520px) {
+    .zakazBox {
+        justify-content: center;
+    }
+
+    .cart {
+        margin: 10px;
+    }
+
+    .menu_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container button {
+        margin: 5px 0;
+    }
+
+    .addZakazDiv {
+        max-width: 80%;
+    }
 }

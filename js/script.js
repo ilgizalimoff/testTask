@@ -6,10 +6,9 @@ getZakazyBtn.addEventListener('click', function () {
     zakazBox.style.display = 'flex'
     addZakazDiv.style.display = 'none'
 
-    fetch('http://localhost:3000/zgalovok')
+    fetch('https://my-json-server.typicode.com/ilgizalimoff/server/zgalovok')
         .then(response => response.json())
         .then(data => renderZakazov(data))
-
     function renderZakazov(data) {
         let content = ''
         data.forEach(element => {
@@ -22,15 +21,15 @@ getZakazyBtn.addEventListener('click', function () {
         });
         zakazBox.innerHTML = content
     }
-    showDopPar.style.display ='inline'
+    showDopPar.style.display = 'inline'
 })
 getDopParams.addEventListener('click', function () {
-    fetch('http://localhost:3000/zgalovok')
+    fetch('https://my-json-server.typicode.com/ilgizalimoff/server/zgalovok')
         .then(response => response.json())
         .then(data => getDopPosiZakazov(data))
 
     function getDopPosiZakazov(data) {
-        fetch('http://localhost:3000/position')
+        fetch('https://my-json-server.typicode.com/ilgizalimoff/server/position')
             .then(response => response.json())
             .then(dopData => getDopPos(dopData))
 

@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Тестовое задание</title>
 </head>
 
 <body>
     <div class="container">
-        <button id="getZakazy">Посмотреть заказы</button>
-        <button id="addZakazy">Добавить заказы</button>
-        <button id="showDopPar">Дополнительные позиции</button>
+        <div class="menu_wrapper">
+            <button id="getZakazy">Посмотреть заказы</button>
+            <button id="addZakazy">Добавить заказы</button>
+            <button id="showDopPar">Дополнительные позиции</button>
+        </div>
         <div class="addZakazDiv">
-            <label for="">Цех производителя: </label><input id="cehProizv" type="text">
-            <br><label for="">Дата начала: </label><input id="date1" type="text">
-            <br> <label for="">Дата окончания: </label><input id="date2" type="text">
-            <br><label for="">Статус</label><select id="status" name="" id="">
+            <label for="cehProizv">Цех производителя: </label>
+            <input id="cehProizv" type="text">
+            <br><label for="">Дата начала: </label>
+            <input id="date1" type="text">
+            <br> <label for="">Дата окончания: </label>
+            <input id="date2" type="text">
+            <br><label for="">Статус</label>
+            <br><select id="status" name="" id="">
                 <option value="новый">Новый</option>
                 <option value="в работе">В работе</option>
                 <option value="выполнен">Выполнен</option>
@@ -35,8 +41,8 @@
 
     </div>
 
-    <script src="/js/script.js"></script>
-    <script src="js/addZakaz.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/addZakaz.js"></script>
 
 </body>
 
